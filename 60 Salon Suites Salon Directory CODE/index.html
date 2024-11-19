@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
     <title>Find A Salon by 60 Salon Suites</title>
     <link href="https://fonts.googleapis.com/css2?family=Hallender&display=swap" rel="stylesheet">
     <style>
@@ -15,14 +19,21 @@
             flex-direction: column; 
             align-items: center; 
         }
+
         h1 { 
-            font-family: 'Hallender', sans-serif; 
-            font-style: italic; /* Letra en cursiva */
-            color: #63493e; 
-            border-bottom: 2px solid #63493e; 
+            font-family: "PT Serif", serif; 
+            font-weight: 400;
+            font-style: normal;
+            color: #15161A;  
             padding-bottom: 10px; 
             text-align: center; 
             animation: fadeIn 1s;
+            font-size: 3.5em; /* Ajusta el tamaño aquí */
+            display: inline-block;
+            margin-bottom: 0 auto; /* Espacio debajo del encabezado */
+            white-space: nowrap; /* Evita el salto de línea */
+            overflow: hidden; /* Si el texto es demasiado largo, lo recorta */
+            text-overflow: ellipsis; /* Añade puntos suspensivos si el texto se desborda */
         }
         @keyframes fadeIn {
             from { opacity: 0; }
@@ -38,7 +49,7 @@
             margin: 5px; 
             padding: 15px; 
             width: 250px; 
-            border: 2px solid #ffc752; 
+            border: 2px solid #15161A; 
             border-radius: 5px; 
             background-color: #efede6; 
             animation: grow 0.3s;
@@ -48,13 +59,12 @@
             to { transform: scale(1.02); }
         }
         .search-button { 
-            background-color: #ffc752; 
+            background-color: #15161A; 
             color: white; 
             border: none; 
             padding: 15px 20px; 
             border-radius: 5px; 
             cursor: pointer; 
-            animation: bounce 0.3s infinite alternate;
         }
         @keyframes bounce {
             0% { transform: translateY(0); }
@@ -86,7 +96,7 @@
             height: 80px; /* Tamaño aumentado */
             border-radius: 50%; 
             overflow: hidden; 
-            border: 3px solid #63493e; 
+            border: 3px solid #15161A; 
             position: absolute; 
             top: -70px; 
             left: calc(50% - 40px); 
@@ -134,11 +144,11 @@
         }
 
         p {
-    color: #63493e; /* Cambia este valor por el color deseado */
+    color: #15161A; /* Cambia este valor por el color deseado */
 }
 
 h5 {
-    color: #63493e; /* Cambia este valor por el color deseado */
+    color: #15161A; /* Cambia este valor por el color deseado */
 }
 
 .salon-container {
@@ -151,7 +161,7 @@ h5 {
 </head>
 <body>
 
- <h1></h1>
+ <h1>Find A Salon by 60 Salon Suites</h1>
 
     <div class="search-container">
         <input type="text" id="service" placeholder="By Service" class="form-control">
@@ -160,8 +170,8 @@ h5 {
         <button id="searchBtn" class="search-button">Search</button>
     </div>
     
-    <!-- SUITE 3 -->
-    <div class="salon-container" id="salonContainer">
+     <!-- SUITE 3 -->
+     <div class="salon-container" id="salonContainer">
         <div class="salon-box">
             <div class="professional-photo">
                 <img src="salon-photo1.png" alt="Professional Photo">
@@ -171,7 +181,7 @@ h5 {
             <p>Brandon, FL 33511</p>
             <p>Suite #3</p>
             <div class="specialty-services">
-                <p>Specialty Services: Manicures, Pedicures, Nail Enhancements, Nail Art, Nail Repair, Spa Treatments, Eyebrow Waxing, Facial Waxing and more.</p>
+                <p><strong>Specialty Services:</strong> Manicures, Pedicures, Nail Enhancements, Nail Art, Nail Repair, Spa Treatments, Eyebrow Waxing, Facial Waxing and more.</p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1 813 595 9185" onclick="showChatBubble('Teléfono: +1 813 595 9185')">
@@ -197,7 +207,7 @@ h5 {
             <p>Brandon, FL 33511</p>
             <p>Suite #5</p>
             <div class="specialty-services">
-                <p>Specialty Services: Eyebrow, coloration and henna, lash lift, nanoblading, Hydra Gloss lips, tattoo removal, laser carbon peel, tissue repair and more.</p>
+                <p><strong>Specialty Services:</strong> Eyebrow, coloration and henna, lash lift, nanoblading, Hydra Gloss lips, tattoo removal, laser carbon peel, tissue repair and more.</p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1(813)370-4559" onclick="showChatBubble('Teléfono: +1(813)370-4559')">
@@ -225,7 +235,7 @@ h5 {
             <p>Brandon, FL 33511</p>
             <p>Suite #5</p>
             <div class="specialty-services">
-                <p>Specialty Services: Hair salon </p>
+                <p><strong>Specialty Services:</strong> Hair salon </p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1(813) 662-4800" onclick="showChatBubble('Teléfono: +1(813) 662-4800')">
@@ -253,7 +263,7 @@ h5 {
             <p>Brandon, FL 33511</p>
             <p>Suite #2</p>
             <div class="specialty-services">
-                <p>Specialty Services: Nails Salon </p>
+                <p><strong>Specialty Services:</strong> Nails Salon </p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1 (813) 724-1636" onclick="showChatBubble('Teléfono: +1234567890')">
@@ -281,7 +291,7 @@ h5 {
             <p>Brandon, FL 33511</p>
             <p>Suite #4</p>
             <div class="specialty-services">
-                <p>Specialty Services: Hair salon </p>
+                <p><strong>Specialty Services:</strong> Hair salon </p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1(813) 304-3060" onclick="showChatBubble('Teléfono: +1(813) 304-3060')">
@@ -306,7 +316,7 @@ h5 {
             <p>Brandon, FL 33511</p>
             <p>Suite #6</p>
             <div class="specialty-services">
-                <p>Specialty Services: Tattoo shop  </p>
+                <p><strong>Specialty Services:</strong> Tattoo shop  </p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="https://www.facebook.com/p/Jean-Dany-Tattooartist-100088148919866/" target="_blank">
@@ -328,7 +338,7 @@ h5 {
             <p>Brandon, FL 33511</p>
             <p>Suite #7</p>
             <div class="specialty-services">
-                <p>Specialty Services: Tattoo shop</p>
+                <p><strong>Specialty Services:</strong> Tattoo shop </p>
             </div>
             <div class="social-buttons">
                 <a class="social-button" href="tel:+1 786-839-1100" onclick="showChatBubble('Teléfono: +1 786-839-1100')">
@@ -339,6 +349,8 @@ h5 {
                 </a>
             </div>
         </div>
+
+    </div>
 
     </div>
 
@@ -383,3 +395,4 @@ h5 {
 
 </body>
 </html>
+
